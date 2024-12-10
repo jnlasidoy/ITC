@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Conversion/Conversion.html" class="active">Conversion</a></li>
+            <li><a href="../Factorial/Factorial.html">Factorial</a></li>
+            <li><a href="../IncomeTax/IncomeTax.html">Income Tax</a></li>
+            <li><a href="../Simplepayroll/Simplepayroll.html">Simple Payroll</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Unit Converter</h1>
+        <form id="converterForm" class="form-group">
+            <label for="valueInput">Enter value:</label>
+            <input type="number" id="valueInput" step="any" required>
+            
+            <label for="conversionType">Choose conversion type:</label>
+            <select id="conversionType" required>
+                <option value="ftoc">Fahrenheit to Celsius</option>
+                <option value="ctof">Celsius to Fahrenheit</option>
+                <option value="mtof">Meters to Feet</option>
+                <option value="ftom">Feet to Meters</option>
+            </select>
+            
+            <button type="submit">Convert</button>
+        </form>
+
+        <div id="result" class="result">
+            <p><strong>Result:</strong> <span id="conversionResult">0.00</span></p>
+        </div>
+    </main>
+    <script type="module" src="Conversion.js"></script>
+</body>
+</html>

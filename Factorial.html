@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Conversion/Conversion.html">Conversion</a></li>
+            <li><a href="../Factorial/Factorial.html" class="active">Factorial</a></li>
+            <li><a href="../IncomeTax/IncomeTax.html">Income Tax</a></li>
+            <li><a href="../Simplepayroll/Simplepayroll.html">Simple Payroll</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Number Operations</h1>
+        <form id="numberForm" class="form-group">
+            <label for="numberInput">Enter an integer (n):</label>
+            <input type="number" id="numberInput" required>
+            <button type="button" id="factorialButton">Calculate Factorial</button>
+            <button type="button" id="sumButton">Calculate Sum</button>
+            <button type="button" id="averageButton">Calculate Average</button>
+        </form>
+
+        <div id="results" class="result">
+            <p><strong>Result:</strong> <span id="resultDisplay"></span></p>
+        </div>
+    </main>
+    <script type="module" src="Factorial.js"></script>
+</body>
+</html>

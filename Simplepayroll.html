@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../Conversion/Conversion.html">Conversion</a></li>
+            <li><a href="../Factorial/Factorial.html">Factorial</a></li>
+            <li><a href="../IncomeTax/IncomeTax.html">Income Tax</a></li>
+            <li><a href="../Simplepayroll/Simplepayroll.html" class="active">Simple Payroll</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Payroll Management</h1>
+        <form id="payrollForm" class="form-group">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" required>
+            <label for="daysWorked">Days Worked:</label>
+            <input type="number" id="daysWorked" required>
+            <label for="dailyRate">Daily Rate:</label>
+            <input type="number" id="dailyRate" required>
+            <label for="deductionAmount">Deduction Amount:</label>
+            <input type="number" id="deductionAmount" required>
+            <button type="submit">Add Employee</button>
+        </form>
+
+        <h2>Payroll List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Employee Name</th>
+                    <th>Days Worked</th>
+                    <th>Daily Rate</th>
+                    <th>Gross Pay</th>
+                    <th>Deduction Amount</th>
+                    <th>Net Pay</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="payrollTableBody"></tbody>
+        </table>
+    </main>
+    <script type="module" src="Simplepayroll.js"></script>
+</body>
+</html>
