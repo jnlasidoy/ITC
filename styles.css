@@ -87,6 +87,41 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Payroll Management Container */
+.payroll-management-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0; 
+    background-color: #282828; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Payroll List Container */
+.payroll-list-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #282828; / Light background for payroll list /
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    top: 20px; / Adjust as needed /
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0; / Add some margin to separate the containers */
+}
+
 /* Converters */
 .converters {
     display: grid;
