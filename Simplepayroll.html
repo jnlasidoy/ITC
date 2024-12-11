@@ -16,7 +16,7 @@
             <li><a href="Simplepayroll.html" class="active">Simple Payroll</a></li>
         </ul>
     </nav>
-    <main class="container">
+    <div class="payroll-management-container">
         <h1>Payroll Management</h1>
         <form id="payrollForm" class="form-group">
             <label for="employeeName">Employee Name:</label>
@@ -29,7 +29,9 @@
             <input type="number" id="deductionAmount" required>
             <button type="submit">Add Employee</button>
         </form>
-        
+    </div>
+
+    <div class="payroll-list-container">
         <h2>Payroll List</h2>
         <table>
             <thead>
@@ -46,7 +48,7 @@
             </thead>
             <tbody id="payrollTableBody"></tbody>
         </table>
-    </main>
+    </div>
     <script type="module" src="Simplepayroll.js"></script>
 </body>
 </html>
