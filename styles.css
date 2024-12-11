@@ -13,9 +13,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 100vh;
     padding-top: 60px; 
+    overflow-y: auto;
 }
 
 /* Navigation Bar */
@@ -66,7 +67,7 @@ nav ul li a.active {
 
 /* Container */
 .container {
-    position: absolute;
+    position: relative;
     top: 45%; 
     left: 50%;
     transform: translate(-50%, -50%);
@@ -79,6 +80,7 @@ nav ul li a.active {
     width: 100%;
     padding-top: 80px;
     max-width: 1000px;
+    margin-top: 100px;
     margin: auto;
     background-color: #333333a1;
     border-radius: 10px;
